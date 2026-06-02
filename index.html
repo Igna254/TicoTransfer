@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TransferCr - Transporte Turístico en Costa Rica</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a href="#inicio" class="brand">TransferCr</a>
+        <div class="header-controls">
+          <div class="lang-switcher">
+            <button id="langES" class="lang-btn active" data-lang="es">ES</button>
+            <button id="langEN" class="lang-btn" data-lang="en">EN</button>
+          </div>
+          <button id="navToggle" class="nav-toggle" aria-label="Abrir menú">☰</button>
+        </div>
+        <nav class="site-nav" id="siteNav">
+          <a href="#inicio" data-translate="nav_inicio">Inicio</a>
+          <a href="#servicios" data-translate="nav_servicios">Servicios</a>
+          <a href="#tours" data-translate="nav_tours">Tours</a>
+          <a href="#galeria" data-translate="nav_galeria">Galería</a>
+          <a href="#reservas" data-translate="nav_reservas">Reservas</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section id="inicio" class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="eyebrow" data-translate="hero_eyebrow">Transporte Turístico</span>
+            <h1 data-translate="hero_title">Descubre Costa Rica con comodidad, seguridad y estilo</h1>
+            <p data-translate="hero_description">
+              Viaja con nosotros: traslados al aeropuerto, tours privados y excursiones a los destinos más hermosos del país.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#reservas" data-translate="hero_btn_reserve">Reservar Ahora</a>
+              <a class="btn btn-secondary" href="#servicios" data-translate="hero_btn_services">Ver Servicios</a>
+            </div>
+            <div class="hero-features">
+              <span data-translate="feature_safe">100% Seguro</span>
+              <span data-translate="feature_available">24/7 Disponible</span>
+              <span data-translate="feature_premium">Servicio Premium</span>
+            </div>
+          </div>
+          <div class="hero-visual">
+            <img src="logo.png" alt="logo transfer" class="hero-image" />
+          </div>
+        </div>
+      </section>
+
+      <section id="servicios" class="section bg-light">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label" data-translate="services_label">Nuestros Servicios</span>
+            <h2 data-translate="services_title">Todo lo que necesitas para tu aventura</h2>
+            <p data-translate="services_description">Ofrecemos una amplia gama de servicios de transporte turístico para hacer de tu viaje una experiencia inolvidable.</p>
+          </div>
+
+          <div class="card-grid services-grid">
+            <article class="service-card">
+              <div class="service-icon">✈️</div>
+              <h3 data-translate="service_airport_title">Traslados Aeropuerto</h3>
+              <p data-translate="service_airport_desc">Recogida y entrega en SJO y LIR con puntualidad garantizada.</p>
+              <ul>
+                <li data-translate="service_airport_f1">Monitoreo de vuelos</li>
+                <li data-translate="service_airport_f2">Conductor bilingüe</li>
+                <li data-translate="service_airport_f3">WiFi gratis</li>
+              </ul>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">⛰️</div>
+              <h3 data-translate="service_adventure_title">Aventuras Naturales</h3>
+              <p data-translate="service_adventure_desc">Excursiones a volcanes, bosques nubosos y parques nacionales.</p>
+              <ul>
+                <li data-translate="service_adventure_f1">Arenal & Monteverde</li>
+                <li data-translate="service_adventure_f2">Poas</li>
+                <li data-translate="service_adventure_f3">Rincón de la Vieja</li>
+              </ul>
+            </article>
+
+            <article class="service-card">
+              <div class="service-icon">🏖️</div>
+              <h3 data-translate="service_beach_title">Tours de Playas</h3>
+              <p data-translate="service_beach_desc">Viajes a las playas más hermosas del Pacífico y el Caribe.</p>
+              <ul>
+                <li data-translate="service_beach_f1">Guanacaste</li>
+                <li data-translate="service_beach_f2">Limón</li>
+                <li data-translate="service_beach_f3">Puntarenas</li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="galeria" class="section bg-light">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label" data-translate="gallery_label">Galería</span>
+            <h2 data-translate="gallery_title">Momentos inolvidables</h2>
+            <p data-translate="gallery_description">Descubre los increíbles destinos que puedes visitar con nuestro servicio de transporte turístico.</p>
+          </div>
+          <div class="wrapper">
+            <input checked type="radio" name="slider" id="slide1" />
+            <input type="radio" name="slider" id="slide2" />
+            <input type="radio" name="slider" id="slide3" />
+            <input type="radio" name="slider" id="slide4" />
+            <input type="radio" name="slider" id="slide5" />
+
+  <div class="slider-wrapper">
+    <div class="inner">
+      <article>
+        <div class="info top-left">
+          <h3>Rio Celeste</h3></div>
+       <img src="rioceleste.jpg" alt="Rio Celeste" />
+      </article>
+
+      <article>
+        <div class="info bottom-right">
+          <h3>Puentes Colgantes</h3></div>
+         <img src="puentescolgantes.jpg" alt="Puentes Colgantes" />
+      </article>
+
+      <article>
+        <div class="info bottom-left">
+          <h3>Manzanillo</h3></div>
+          <img src="Manzanillo.jpg" alt="Manzanillo" />
+      </article>
+
+      <article>
+        <div class="info top-right">
+          <h3>Conchal</h3></div>
+        <img src="Conchal.jpg" alt="Conchal" />
+      </article>
+
+      <article>
+        <div class="info bottom-left">
+          <h3>Volcán Arenal</h3></div>
+         <img src="volcanarenal.jpg" alt="Volcán Arenal" />
+      </article>
+    </div>
+    <!-- .inner -->
+  </div>
+  <!-- .slider-wrapper -->
+
+  <div class="slider-dot-control">
+    <label for=slide1></label>
+    <label for=slide2></label>
+    <label for=slide3></label>
+    <label for=slide4></label>
+    <label for=slide5></label>
+  </div>
+  <!-- .slider-dot-control -->
+</div>
+        </div>
+      </section>
+
+      <section id="reservas" class="section">
+        <div class="container">
+          <div class="form-grid">
+            <div>
+              <span class="section-label" data-translate="booking_label">Reservaciones</span>
+              <h2 data-translate="booking_title">Reserva tu transporte</h2>
+              <p data-translate="booking_description">Completa el formulario y nos pondremos en contacto contigo para confirmar tu reserva.</p>
+            </div>
+            <form id="bookingForm" class="booking-form">
+              <input type="hidden" name="to_email" value="ignarb1990@gmail.com" />
+              <label data-translate="form_name">Nombre completo *</label>
+              <input name="user_name" type="text" placeholder="Ej: Juan Pérez" data-placeholder="form_name_placeholder" required />
+
+              <label data-translate="form_email">Correo electrónico *</label>
+              <input name="user_email" type="email" placeholder="correo@ejemplo.com" data-placeholder="form_email_placeholder" required />
+
+              <label data-translate="form_phone">Teléfono / WhatsApp *</label>
+              <input name="user_phone" type="tel" placeholder="+506 8690-4507" data-placeholder="form_phone_placeholder" required />
+
+              <label data-translate="form_date">Fecha del servicio *</label>
+              <input name="service_date" type="date" required />
+
+              <label data-translate="form_service">Tipo de servicio *</label>
+              <select name="service_type" required>
+                <option value="" data-translate="form_service_select">Seleccionar servicio</option>
+                <option value="Traslado Aeropuerto" data-translate="form_service_airport">Traslado Aeropuerto</option>
+                <option value="Tour Privado" data-translate="form_service_tour">Tour Privado</option>
+                <option value="Aventura Natural" data-translate="form_service_adventure">Aventura Natural</option>
+                <option value="Tour de Playas" data-translate="form_service_beach">Tour de Playas</option>
+              </select>
+
+              <label data-translate="form_passengers">Número de pasajeros *</label>
+              <select name="passengers" required>
+                <option value="" data-translate="form_passengers_select">Seleccionar cantidad</option>
+                <option value="1-2 personas" data-translate="form_passengers_1">1-2 personas</option>
+                <option value="3-4 personas" data-translate="form_passengers_2">3-4 personas</option>
+                <option value="5-7 personas" data-translate="form_passengers_3">5-7 personas</option>
+                <option value="8-10 personas" data-translate="form_passengers_4">8-10 personas</option>
+                <option value="11-15 personas" data-translate="form_passengers_5">11-15 personas</option>
+                <option value="+15 personas" data-translate="form_passengers_6">+15 personas</option>
+              </select>
+
+              <label data-translate="form_pickup">Lugar de recogida *</label>
+              <input name="pickup_location" type="text" placeholder="Ej: Aeropuerto SJO, Hotel X" data-placeholder="form_pickup_placeholder" required />
+
+              <label data-translate="form_destination">Lugar de destino *</label>
+              <input name="destination" type="text" placeholder="Ej: La Fortuna, Manuel Antonio" data-placeholder="form_destination_placeholder" required />
+
+              <label data-translate="form_details">Detalles adicionales</label>
+              <textarea name="details" rows="4" placeholder="Cuéntanos más sobre tu viaje..." data-placeholder="form_details_placeholder"></textarea>
+
+              <button class="btn btn-primary" type="submit" data-translate="form_submit">Solicitar Reserva</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <strong>TransferCr</strong>
+          <p data-translate="footer_description">Tu mejor opción para explorar Costa Rica con comodidad y estilo.</p>
+        </div>
+        <p data-translate="footer_copyright">&copy; 2026 TransferCr. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <script type="text/javascript" src="https://cdn.emailjs.com/sdk/3.2.0/email.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
